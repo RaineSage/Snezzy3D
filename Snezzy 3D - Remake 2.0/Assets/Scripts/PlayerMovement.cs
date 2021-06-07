@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        Vector3 direction = new Vector3 (Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+        Vector3 direction = new Vector3 (- Input.GetAxisRaw("Horizontal"), 0f, - Input.GetAxisRaw("Vertical"));
         direction = direction.normalized * m_movementSpeed;
 
         direction.y = m_rigidbody.velocity.y;
