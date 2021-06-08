@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float m_jumpForce = 5f;
 
     private bool m_isAttacking = false;
+    private bool m_isGrounded = false;
 
     private Rigidbody m_rigidbody;
 
@@ -43,9 +44,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && m_isGrounded)
         {
             m_rigidbody.AddForce(Vector3.up * m_jumpForce, ForceMode.VelocityChange);
+            m_isGrounded = false;
         }
     }
 
@@ -57,6 +59,11 @@ public class PlayerMovement : MonoBehaviour
             m_isAttacking = true;
         }
         m_isAttacking = false;
+    }
+
+    private void OnCollisionStay(Collision _col)
+    {
+        m_isGrounded = true;
     }
 
     private void OnCollisionEnter(Collision _col)

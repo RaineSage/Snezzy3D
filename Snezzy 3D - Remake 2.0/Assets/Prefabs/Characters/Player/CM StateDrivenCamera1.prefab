@@ -422,8 +422,12 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_ParentHash: []
+  m_CustomBlends: {fileID: 11400000, guid: 18fcb821dc0ac81479c8bd0df641afa3, type: 2}
+  m_ParentHash:
+  - m_Hash: 1548876364
+    m_ParentHash: 756556552
+  - m_Hash: 700676351
+    m_ParentHash: 756556552
 --- !u!95 &4796937945728251665
 Animator:
   serializedVersion: 3
@@ -434,7 +438,7 @@ Animator:
   m_GameObject: {fileID: 4796937945728251661}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 744cb443fcaf5fc469c22d09cdb626ff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
