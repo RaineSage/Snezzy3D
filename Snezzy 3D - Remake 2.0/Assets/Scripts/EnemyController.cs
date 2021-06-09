@@ -23,7 +23,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private GameObject m_target;
 
+
     private NavMeshAgent m_meshAgent;
+
 
 
     void Awake()
@@ -66,4 +68,5 @@ public class EnemyController : MonoBehaviour
         
  
     }
+
 }
