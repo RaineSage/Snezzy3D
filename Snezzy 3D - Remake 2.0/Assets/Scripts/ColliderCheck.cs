@@ -11,6 +11,7 @@ public class ColliderCheck : MonoBehaviour
     [SerializeField]
     public TMP_Text m_healthText;
 
+
     private void Update()
     {
         ShowHealth();
@@ -39,6 +40,16 @@ public class ColliderCheck : MonoBehaviour
                 GameManager.m_IsDead = true;
             }
 
+        }
+    }
+
+    private void OnCollisionEnter(Collision _col)
+    {
+        if (_col.gameObject.tag == "HitBox")
+        {
+            Debug.Log("Player Killed Walker!");
+
+            _col.gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
 }
