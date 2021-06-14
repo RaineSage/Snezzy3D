@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static bool m_IsDead = false;
+    public static bool m_winner = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     {
         ReloadGame();
 
-        if(m_IsDead == true)
+        if(m_IsDead == true || m_winner == true)
         {
             SceneManager.LoadScene("EndScreen");
         }

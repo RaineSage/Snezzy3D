@@ -48,4 +48,12 @@ public class ColliderCheck : MonoBehaviour
             _col.gameObject.transform.parent.gameObject.SetActive(false);
         }
     }
+
+    private void OnTriggerEnter(Collider _col)
+    {
+        if(_col.gameObject.tag == "Finish")
+        {
+            GameManager.m_winner = true;
+        }
+    }
 }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BathroomLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 70a00337d62fcc54ca681e2ad7055fd2
   m_configObjects: {}
