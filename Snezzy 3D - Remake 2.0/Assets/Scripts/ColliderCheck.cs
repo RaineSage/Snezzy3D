@@ -23,7 +23,7 @@ public class ColliderCheck : MonoBehaviour
     }
 
     
-    private void OnTriggerEnter(Collider _col)
+    private void OnCollisionEnter(Collision _col)
     {
         if(_col.gameObject.tag == "Enemy")
         {
@@ -39,17 +39,21 @@ public class ColliderCheck : MonoBehaviour
                 Debug.Log("Player has died!");
                 GameManager.m_IsDead = true;
             }
-
         }
-    }
 
-    private void OnCollisionEnter(Collision _col)
-    {
         if (_col.gameObject.tag == "HitBox")
         {
             Debug.Log("Player Killed Walker!");
 
             _col.gameObject.transform.parent.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider _col)
+    {
+        if(_col.gameObject.tag == "Finish")
+        {
+            GameManager.m_winner = true;
         }
     }
 }
