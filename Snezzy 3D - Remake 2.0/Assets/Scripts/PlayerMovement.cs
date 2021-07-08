@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         direction.y = m_rigidbody.velocity.y;
         m_rigidbody.velocity = direction;
 
+
         direction.y = 0;
     }
 
