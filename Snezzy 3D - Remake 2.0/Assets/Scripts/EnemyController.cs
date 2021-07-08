@@ -19,9 +19,18 @@ public class EnemyController : MonoBehaviour
     private float m_distance;
 
     [SerializeField]
+    private float m_fireRate;
+    [SerializeField]        
+    private float m_nextShot;
+
+    [SerializeField]
     private EnemyType m_enemyType;
     [SerializeField]
     private GameObject m_target;
+    [SerializeField]
+    private GameObject m_bullet;
+    [SerializeField]
+    private GameObject m_bulletSpawnPoint;
 
 
     private NavMeshAgent m_meshAgent;
@@ -31,7 +40,11 @@ public class EnemyController : MonoBehaviour
     void Awake()
     {
         m_meshAgent = GetComponent<NavMeshAgent>();
+
+        m_fireRate = 1f;
+        m_nextShot = Time.time;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -65,8 +78,11 @@ public class EnemyController : MonoBehaviour
 
     private void Shooter()
     {
-        
- 
+          if (Time.time > m_nextShot)
+          {
+              Instantiate(m_bullet, m_bulletSpawnPoint.transform.position, Quaternion.identity);
+              m_nextShot = Time.time + m_fireRate;
+          }
     }
 
 }

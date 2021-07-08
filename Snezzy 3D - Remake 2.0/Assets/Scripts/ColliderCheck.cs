@@ -5,40 +5,17 @@ using TMPro;
 
 public class ColliderCheck : MonoBehaviour
 {
-    [SerializeField]
-    private int m_healthCount = 3;
+
+    private ItemCheck m_itemCheck;
 
     [SerializeField]
-    public TMP_Text m_healthText;
+    private HealthBar m_healthBar;
 
-
-    private void Update()
-    {
-        ShowHealth();
-    }
-
-    private void ShowHealth()
-    {
-        m_healthText.text = m_healthCount.ToString();
-    }
-
-    
     private void OnCollisionEnter(Collision _col)
     {
         if(_col.gameObject.tag == "Enemy")
         {
-            Debug.Log("Player took Damage!");
-
-            if(m_healthCount > 1)
-            {
-                m_healthCount -= 1;
-            }
-            else if (m_healthCount == 1)
-            {
-                m_healthCount = 0;
-                Debug.Log("Player has died!");
-                GameManager.m_IsDead = true;
-            }
+            m_healthBar.TakeDamage();
         }
 
         if (_col.gameObject.tag == "HitBox")
@@ -55,5 +32,17 @@ public class ColliderCheck : MonoBehaviour
         {
             GameManager.m_winner = true;
         }
+
+        if(_col.gameObject.tag == "Bullet")
+        {
+            m_healthBar.TakeDamage();
+        }
+
+        //if(_col.gameObject.tag == "Item")
+        //{
+        //    m_itemCheck.ItemBehaviour();
+        //}
     }
+
+    
 }

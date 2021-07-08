@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4350077524318753985}
   - component: {fileID: 6660812273841019450}
   - component: {fileID: 2901811908063439837}
+  - component: {fileID: 6673866700628618838}
   m_Layer: 0
   m_Name: SM_ModularPipe_Small_Long
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d1c5d513c8e126343b2615fd9f502a15, type: 2}
+  - {fileID: 239378781582670930, guid: 489c4e1c7ffcfd54d812bb9c7342e520, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &6673866700628618838
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301110341358504335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.10870594
+  m_Height: 3.2425869
+  m_Direction: 1
+  m_Center: {x: 0.0000030472875, y: -1.4835174, z: -0.000000230968}

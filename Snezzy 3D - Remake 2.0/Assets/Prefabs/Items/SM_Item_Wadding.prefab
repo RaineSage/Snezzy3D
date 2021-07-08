@@ -91,9 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7607310715892086273}
   - component: {fileID: 3849743709916972123}
+  - component: {fileID: 6465022694855363037}
   m_Layer: 0
   m_Name: SM_Item_Wadding
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,3 +127,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5217781, y: 0.32317606, z: 0.7917061}
   m_Center: {x: -0.02548027, y: 0.18220834, z: -0.005716324}
+--- !u!114 &6465022694855363037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7122803892587687099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cffba7d201e336419433377b458af21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_itemType: 3
