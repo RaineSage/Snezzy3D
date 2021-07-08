@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1671217495721092039}
   - component: {fileID: 189807501467572942}
   - component: {fileID: 5390235322038719689}
+  - component: {fileID: 1490509318674903328}
   m_Layer: 0
   m_Name: SM_ModularPipe_Small_Corner
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d1c5d513c8e126343b2615fd9f502a15, type: 2}
+  - {fileID: 239378781582670930, guid: 489c4e1c7ffcfd54d812bb9c7342e520, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1490509318674903328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544690356112142485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.53354573, y: 0.52225995, z: 0.25759143}
+  m_Center: {x: -0.13599116, y: 0.26112825, z: 0.000000007450582}

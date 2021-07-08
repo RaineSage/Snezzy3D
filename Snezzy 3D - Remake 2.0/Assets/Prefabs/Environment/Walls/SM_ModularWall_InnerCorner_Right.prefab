@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7143299975125960909}
   - component: {fileID: 2975488628413106776}
   - component: {fileID: 6877681108677233700}
+  - component: {fileID: 8731377172571964223}
+  - component: {fileID: 6909809515004447381}
   m_Layer: 0
   m_Name: SM_ModularWall_InnerCorner_Right
   m_TagString: Untagged
@@ -59,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5620375db14f56d4a84a59332c650707, type: 2}
+  - {fileID: 239378781582670930, guid: 9bb9578409c145c4aacc1e72e1db38fe, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8731377172571964223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330740054827537514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16720963, y: 5.0000033, z: 10.138651}
+  m_Center: {x: -4.0227795, y: -2.4249983, z: 4.930678}
+--- !u!65 &6909809515004447381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330740054827537514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0000005, y: 0.2705673, z: 10.138651}
+  m_Center: {x: -2.0000002, y: 0.16276765, z: 4.930678}
