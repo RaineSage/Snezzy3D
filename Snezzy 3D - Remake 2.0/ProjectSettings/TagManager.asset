@@ -8,6 +8,11 @@ TagManager:
   - HitBox
   - Item
   - Bullet
+  - Corner_Right
+  - Corner_Left
+  - Corner_Middle
+  - Corner_Forward
+  - Corner_Backward
   layers:
   - Default
   - TransparentFX
