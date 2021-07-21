@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private float m_movementSpeed = 5f;
     [SerializeField]
     private float m_jumpForce = 5f;
+    [SerializeField]
+    private Transform m_camera;
 
     private bool m_isAttacking = false;
     private bool m_isGrounded = false;
@@ -49,10 +51,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        Vector3 direction = new Vector3 (- Input.GetAxisRaw("Horizontal"), 0f, - Input.GetAxisRaw("Vertical"));
+        Vector3 direction = new Vector3 (Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         direction = direction.normalized * m_movementSpeed;
 
         m_isWalking = true;
+
+        direction = m_camera.TransformDirection(direction);
 
         direction.y = m_rigidbody.velocity.y;
         m_rigidbody.velocity = direction;

@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 1628575840796759583}
   - component: {fileID: 1870138101479221876}
   - component: {fileID: 7506740786025218013}
+  - component: {fileID: 8822140899981687855}
   m_Layer: 0
   m_Name: SM_ModularPipe_Big_Whole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1688238192309779134
 Transform:
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6537163616917920869}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -7.89, y: 8.18848, z: 1.2411861}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &1628575840796759583
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 239378781582670930, guid: 489c4e1c7ffcfd54d812bb9c7342e520, type: 3}
+  - {fileID: 2100000, guid: d1c5d513c8e126343b2615fd9f502a15, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,17 @@ CapsuleCollider:
   m_Height: 4.523611
   m_Direction: 1
   m_Center: {x: 0, y: 0.044061184, z: 0.000000014901161}
+--- !u!136 &8822140899981687855
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537163616917920869}
+  m_Material: {fileID: 13400000, guid: 82b0355c2c5ac0640beb3d4ad9755f38, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.18
+  m_Height: 4.49
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.00000035762787, z: 0.000000014901161}
